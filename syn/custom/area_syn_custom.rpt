@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : RISCV_BPU_TAG_FIELD_SIZE8_BPU_SET_FIELD_SIZE3_BPU_LINES_PER_SET4
+Version: O-2018.06-SP4
+Date   : Fri Feb 21 16:21:17 2020
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+Number of ports:                          164
+Number of nets:                         14122
+Number of cells:                        13158
+Number of combinational cells:          10278
+Number of sequential cells:              2878
+Number of macros/black boxes:               0
+Number of buf/inv:                       1108
+Number of references:                      48
+
+Combinational area:              12497.212059
+Buf/Inv area:                      659.680000
+Noncombinational area:           15307.502491
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 27804.714550
+Total area:                 undefined
+1

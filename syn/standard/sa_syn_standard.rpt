@@ -1,0 +1,52 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : RISCV_BPU_TAG_FIELD_SIZE8_BPU_SET_FIELD_SIZE3_BPU_LINES_PER_SET4
+Version: O-2018.06-SP4
+Date   : Sat Feb 22 12:43:04 2020
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+RISCV_BPU_TAG_FIELD_SIZE8_BPU_SET_FIELD_SIZE3_BPU_LINES_PER_SET4
+                       5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  11.1311 mW   (87%)
+  Net Switching Power  =   1.6440 mW   (13%)
+                         ---------
+Total Dynamic Power    =  12.7751 mW  (100%)
+
+Cell Leakage Power     = 508.4825 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       1.0317e+04          338.3600        2.4813e+05        1.0904e+04  (  82.09%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    813.5981        1.3057e+03        2.6035e+05        2.3796e+03  (  17.91%)
+--------------------------------------------------------------------------------------------------
+Total          1.1131e+04 uW     1.6440e+03 uW     5.0848e+05 nW     1.3283e+04 uW

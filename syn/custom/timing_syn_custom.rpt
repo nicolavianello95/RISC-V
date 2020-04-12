@@ -1,0 +1,72 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCV_BPU_TAG_FIELD_SIZE8_BPU_SET_FIELD_SIZE3_BPU_LINES_PER_SET4
+Version: O-2018.06-SP4
+Date   : Fri Feb 21 16:21:17 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: datapath_instance_BPU_instance_CLK_r_REG1888_S6
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: IRAM_ADDR[23]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_BPU_TAG_FIELD_SIZE8_BPU_SET_FIELD_SIZE3_BPU_LINES_PER_SET4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  datapath_instance_BPU_instance_CLK_r_REG1888_S6/CK (DFFR_X2)
+                                                          0.00 #     0.00 r
+  datapath_instance_BPU_instance_CLK_r_REG1888_S6/Q (DFFR_X2)
+                                                          0.23       0.23 r
+  datapath_instance_BPU_instance_U635/ZN (OAI22_X1)       0.07       0.31 f
+  datapath_instance_BPU_instance_U636/ZN (NOR4_X1)        0.11       0.42 r
+  datapath_instance_BPU_instance_U415/Z (XOR2_X1)         0.07       0.48 r
+  datapath_instance_BPU_instance_U103/ZN (AND2_X1)        0.04       0.53 r
+  datapath_instance_BPU_instance_U451/ZN (NAND3_X1)       0.03       0.56 f
+  datapath_instance_BPU_instance_U431/ZN (OR2_X4)         0.10       0.66 f
+  datapath_instance_BPU_instance_U708/ZN (NAND3_X1)       0.07       0.72 r
+  datapath_instance_BPU_instance_U709/ZN (INV_X1)         0.03       0.75 f
+  datapath_instance_BPU_instance_U96/ZN (NAND2_X2)        0.07       0.82 r
+  datapath_instance_BPU_instance_U101/ZN (OR2_X1)         0.17       1.00 r
+  datapath_instance_BPU_instance_U1661/ZN (OAI211_X1)     0.06       1.06 f
+  datapath_instance_BPU_instance_U1662/ZN (INV_X1)        0.03       1.09 r
+  datapath_instance_BPU_instance_U356/ZN (NAND3_X1)       0.03       1.12 f
+  datapath_instance_BPU_instance_U94/ZN (OR2_X1)          0.06       1.18 f
+  datapath_instance_BPU_instance_U1664/ZN (NAND2_X1)      0.03       1.21 r
+  datapath_instance_BPU_instance_U1666/ZN (OAI211_X1)     0.04       1.25 f
+  datapath_instance_BPU_instance_U1667/ZN (INV_X1)        0.03       1.28 r
+  datapath_instance_BPU_instance_U1668/ZN (NAND4_X1)      0.05       1.33 f
+  U6202/ZN (NAND2_X1)                                     0.03       1.37 r
+  U6204/ZN (NAND2_X1)                                     0.04       1.40 f
+  IRAM_ADDR[23] (out)                                     0.03       1.43 f
+  data arrival time                                                  1.43
+
+  clock CLK (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.07       1.93
+  output external delay                                  -0.50       1.43
+  data required time                                                 1.43
+  --------------------------------------------------------------------------
+  data required time                                                 1.43
+  data arrival time                                                 -1.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

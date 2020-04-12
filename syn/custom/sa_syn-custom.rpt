@@ -1,0 +1,35 @@
+Design        Wire Load Model            Library
+------------------------------------------------
+RISCV_BPU_TAG_FIELD_SIZE8_BPU_SET_FIELD_SIZE3_BPU_LINES_PER_SET4
+                       5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  11.1056 mW   (88%)
+  Net Switching Power  =   1.5750 mW   (12%)
+                         ---------
+Total Dynamic Power    =  12.6806 mW  (100%)
+
+Cell Leakage Power     = 518.3163 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       1.0324e+04          313.6996        2.4932e+05        1.0887e+04  (  82.48%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    781.7789        1.2613e+03        2.6899e+05        2.3121e+03  (  17.52%)
+--------------------------------------------------------------------------------------------------
+Total          1.1106e+04 uW     1.5750e+03 uW     5.1832e+05 nW     1.3199e+04 uW

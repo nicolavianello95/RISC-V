@@ -1,0 +1,90 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCV_BPU_TAG_FIELD_SIZE8_BPU_SET_FIELD_SIZE3_BPU_LINES_PER_SET4
+Version: O-2018.06-SP4
+Date   : Fri Feb 21 21:49:34 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: CLK_r_REG2758_S4
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: CLK_r_REG2671_S2
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_BPU_TAG_FIELD_SIZE8_BPU_SET_FIELD_SIZE3_BPU_LINES_PER_SET4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CLK_r_REG2758_S4/CK (DFFS_X1)                           0.00 #     0.00 r
+  CLK_r_REG2758_S4/Q (DFFS_X1)                            0.11       0.11 f
+  U3762/ZN (OR2_X1)                                       0.07       0.18 f
+  U3760/ZN (NAND2_X2)                                     0.06       0.24 r
+  datapath_instance_RF_instance_U150/ZN (INV_X1)          0.05       0.29 f
+  datapath_instance_RF_instance_U209/ZN (NAND2_X1)        0.06       0.35 r
+  datapath_instance_RF_instance_U219/ZN (OR2_X1)          0.06       0.41 r
+  datapath_instance_RF_instance_U220/ZN (INV_X1)          0.06       0.47 f
+  datapath_instance_RF_instance_U344/ZN (AOI22_X1)        0.07       0.54 r
+  datapath_instance_RF_instance_U345/ZN (NAND2_X1)        0.03       0.57 f
+  datapath_instance_RF_instance_U346/ZN (AOI21_X1)        0.05       0.62 r
+  datapath_instance_RF_instance_U348/ZN (NAND4_X1)        0.04       0.66 f
+  datapath_instance_RF_instance_U27/ZN (OR3_X1)           0.07       0.74 f
+  U5096/ZN (AOI22_X1)                                     0.05       0.78 r
+  U4318/ZN (AND3_X2)                                      0.07       0.85 r
+  U5836/ZN (NOR2_X1)                                      0.03       0.88 f
+  U3875/ZN (NOR2_X1)                                      0.05       0.93 r
+  U2766/ZN (AND2_X1)                                      0.06       0.99 r
+  U3823/ZN (INV_X1)                                       0.03       1.02 f
+  U4086/ZN (OAI211_X1)                                    0.05       1.06 r
+  U3824/ZN (AOI21_X1)                                     0.03       1.09 f
+  U3712/ZN (OAI21_X1)                                     0.04       1.13 r
+  U3822/ZN (NAND2_X1)                                     0.03       1.16 f
+  U5710/ZN (NAND3_X1)                                     0.03       1.19 r
+  U5641/ZN (NAND3_X1)                                     0.03       1.22 f
+  U2935/ZN (NAND3_X1)                                     0.03       1.25 r
+  U2934/ZN (NAND2_X1)                                     0.03       1.27 f
+  U2674/ZN (NAND2_X1)                                     0.03       1.30 r
+  U2920/ZN (NAND2_X1)                                     0.03       1.33 f
+  U2672/ZN (NAND3_X1)                                     0.03       1.35 r
+  U2671/ZN (NAND2_X1)                                     0.03       1.38 f
+  U5907/ZN (NAND2_X1)                                     0.04       1.42 r
+  U5914/Z (BUF_X2)                                        0.07       1.48 r
+  U5915/Z (MUX2_X1)                                       0.09       1.57 f
+  datapath_instance_BPU_instance_U288/ZN (XNOR2_X1)       0.05       1.62 r
+  datapath_instance_BPU_instance_U289/ZN (NAND4_X1)       0.04       1.66 f
+  datapath_instance_BPU_instance_U290/ZN (NOR2_X1)        0.04       1.71 r
+  datapath_instance_BPU_instance_U1162/ZN (NAND4_X1)      0.05       1.76 f
+  datapath_instance_BPU_instance_U1149/ZN (AND2_X1)       0.04       1.80 f
+  U4461/ZN (NOR2_X1)                                      0.04       1.85 r
+  U4462/ZN (INV_X1)                                       0.03       1.88 f
+  CLK_r_REG2671_S2/D (DFFR_X1)                            0.01       1.89 f
+  data arrival time                                                  1.89
+
+  clock CLK (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.07       1.93
+  CLK_r_REG2671_S2/CK (DFFR_X1)                           0.00       1.93 r
+  library setup time                                     -0.04       1.89
+  data required time                                                 1.89
+  --------------------------------------------------------------------------
+  data required time                                                 1.89
+  data arrival time                                                 -1.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
